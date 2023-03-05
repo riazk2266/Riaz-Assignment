@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, skyblue 30%, blue 90%);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: rgba(0, 0, 0, 0.777);
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 30px 60px 30px;
+}
+.container > div {
+  border-radius: 30px;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.638);
+  transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+img {
+  width: 100%;
+}
+.container > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.03);
+}
